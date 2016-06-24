@@ -12,6 +12,10 @@ nav {
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1px;
     box-shadow: 0 3px 5px black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
 }
 
 nav img, nav ul{
@@ -34,6 +38,7 @@ nav ul li {
     padding-top: 40px;
     margin-right: 20px;
     margin-left: 20px;
+    position: relative;
 }
 
 nav ul li a {
@@ -45,8 +50,47 @@ nav ul li a {
     padding-left: 5px;
 }
 
+nav ul li a:hover {
+    color: orange;
+    border-left: orange 2px solid;
+}
+
+nav ul li ul {
+    position: absolute;
+    margin-left: 0;
+    left: 0;
+    display: none;
+    background-color: black;
+    height: auto;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-bottom: white 2px solid;
+}
+
+nav ul li ul li {
+    display: block;
+    margin: 0;
+}
+
+nav ul li ul li a {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+form {
+    float: right;
+    padding-top: 30px;
+    margin-right: 50px;
+}
+
+.search input {
+    padding: 7px;
+}
+
 .carousel-container {
     background-color: black;
+    margin-top: 110px;
 }
 
 .carousel {
@@ -58,4 +102,112 @@ nav ul li a {
     height: 400px;
     display: inline-block;
     margin: auto;
+}
+
+article {
+    background-color: black;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+section {
+    color: white;
+}
+
+section.left {
+    display: inline-block;
+    vertical-align: top;
+    padding: 40px;
+    width: 55%;
+}
+
+section h2 {
+    margin: 0;
+    font-size: 60px;
+    font-family: 'Oswald';
+    margin-bottom: 20px;
+}
+
+section img {
+    width: 100%;
+    margin: 0;
+}
+
+figure {
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+
+.double {
+    margin-top: 30px;
+}
+
+.double figure {
+    width: 49%;
+    margin: 0;
+    display: inline-block;
+}
+
+.double figure:nth-child(2) {
+    margin-left: 5px;
+}
+
+.double img {
+    height: 200px;
+}
+
+figcaption {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5px;
+    width: 100%;
+    background-color: rgba(126,126,126, .75);
+    transition: 200ms;
+    font-family: 'Oswald';
+}
+
+figure:hover figcaption {
+    background-color: rgba(126,126,126, .35);
+    text-shadow: 2px 2px 5px black;
+    transition: 200ms;
+}
+
+section.right {
+    display: inline-block;
+    vertical-align: top;
+    width: 38%;
+    padding-top: 40px;
+}
+
+.video_toggle {
+    width: 100%;
+}
+
+button {
+    width: 100%;
+    font-size: 25px;
+}
+
+video {
+    display: none;
+    width: 100%;
+}
+
+audio {
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+    transition: ease all 1s;
+}
+
+.notHidden {
+    visibility: visible;
+    transition: ease all 1s;
 }

@@ -13,25 +13,79 @@
             <nav>
                 <img src="images/logo.png" alt="" />
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="">NEWS</a></li>
-                    <li><a href="#">GAMES</a></li>
-                    <li><a href="#">TOYS</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li class="dropdown"><a href="#">HOME</a></li>
+                    <li class="dropdown"><a href="">NEWS</a>
+                        <ul>
+                            <li><a href="#">Articles</a></li>
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">Other</a></li>
+                        </ul></li>
+                    <li class="dropdown"><a href="#">GAMES</a>
+                        <ul>
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Adventure</a></li>
+                            <li><a href="#">RPG</a></li>
+                            <li><a href="#">Shooters</a></li>
+                            <li><a href="#">Strategy</a></li>
+                            <li><a href="#">Puzzle</a></li>
+                        </ul></li>
+                    <li class="dropdown"><a href="#">TOYS</a>
+                        <ul>
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Adventure</a></li>
+                            <li><a href="#">RPG</a></li>
+                            <li><a href="#">Shooters</a></li>
+                            <li><a href="#">Strategy</a></li>
+                            <li><a href="#">Puzzle</a></li>
+                        </ul></li>
+                    <li class="dropdown"><a href="#">CONTACT</a></li>
                 </ul>
+
+                <form class="search" action="index.html" method="post">
+                    <label style="color: white; font-size: 20px;" for="search">Search:</label>
+                    <input type="text" name="search" value="">
+                </form>
             </nav>
             <div class="carousel-container">
                 <div class="carousel">
                     <div><img src="images/city.jpg" alt="" title="This place" /></div>
-                    <div><img src="images/city.jpg" alt="" /></div>
-                    <div><img src="images/city.jpg" alt="" /></div>
+                    <div><img src="images/chip.jpg" alt="" /></div>
+                    <div><img src="images/cube.jpg" alt="" /></div>
                 </div>
             </div>
         </header>
 
+        <article class="content">
+            <section class="left">
+                <h2>The Latest</h2>
+                <figure><img src="images/309H.jpg" alt="" /><figcaption>The Sound Gizmo Tears Up Store Shelves</figcaption></figure>
+
+                <div class="double">
+                <figure><img src="images/cube.jpg" alt="" /><figcaption>Faster, Smoother Rubik's Cube! Try it!</figcaption></figure>
+                <figure><img src="images/chip.jpg" alt="" /><figcaption>Brand New Super FX Chip by Nintendo Enhances SNES Graphics!</figcaption></figure>
+                </div>
+            </section>
+            <section class="right">
+                <h2>Extras</h2>
+                <div class="video_toggle">
+                    <button type="button" name="button">&#9660; Show Video &#9660;</button>
+                    <video src="video/matt_presentation.mp4" controls poster="images/card.png"></video>
+                </div>
+                <div class="audio_toggle">
+                    <button type="button" name="button">&#9660; Show Audio Player &#9660;</button>
+                    <audio class=" audio hidden" src="audio/Blue-Ska.mp3" controls>Blue Ska</audio>
+                </div>
+
+            </section>
+        </article>
+
+
+
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
         <script type="text/javascript" src="js/plugins/slick-1.6.0/slick/slick.min.js"></script>
+                <script src = "js/modernizr.js"></script>
         <script src="js/main.js" type="text/javascript"></script>
+
     </body>
 </html>
